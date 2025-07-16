@@ -361,6 +361,9 @@ async def add_competitor(
     
     await db.competitors.insert_one(competitor_doc)
     
+    # Remove MongoDB _id field before returning
+    competitor_doc.pop("_id", None)
+    
     return {
         "success": True,
         "message": "Competitor added successfully",
