@@ -325,6 +325,10 @@ async def get_twitter_mentions(
                 if tweets:
                     await db.twitter_mentions.insert_many(tweets)
                 
+                # Remove MongoDB _id field from tweets before returning
+                for tweet in tweets:
+                    tweet.pop("_id", None)
+                
                 return {
                     "success": True,
                     "tweets": tweets,
