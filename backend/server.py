@@ -262,6 +262,10 @@ async def get_tech_news(
                 if articles:
                     await db.tech_news.insert_many(articles)
                 
+                # Remove MongoDB _id field from articles before returning
+                for article in articles:
+                    article.pop("_id", None)
+                
                 return {
                     "success": True,
                     "articles": articles,
