@@ -3,7 +3,7 @@
     "test": "Health Check",
     "success": true,
     "details": "API is healthy and responding correctly",
-    "timestamp": "2025-07-16T22:59:33.017017",
+    "timestamp": "2025-07-16T23:01:00.396685",
     "response_data": {
       "status": "healthy",
       "service": "Simba-Watch API"
@@ -11,31 +11,19 @@
   },
   {
     "test": "User Registration",
-    "success": true,
-    "details": "User registered successfully with valid token",
-    "timestamp": "2025-07-16T22:59:34.046186",
-    "response_data": {
-      "message": "User registered successfully",
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMGEwMjM3YjgtMjJlYy00MDc4LThmZWUtOTJjN2ZlZDQ1OTc1IiwiZXhwIjoxNzUzMzExNTc0fQ.YrloQax445G6C44jPvtdoQrpr5d1Mw7SMX7F3BkogNQ",
-      "user": {
-        "id": "0a0237b8-22ec-4078-8fee-92c7fed45975",
-        "username": "john_doe",
-        "email": "john.doe@techcorp.com",
-        "business_name": "TechCorp Solutions",
-        "sector": "it",
-        "location": "San Francisco, CA",
-        "language": "en"
-      }
-    }
+    "success": false,
+    "details": "Request failed: HTTPSConnectionPool(host='7936d2c4-d315-4645-99aa-51eb834d0943.preview.emergentagent.com', port=443): Read timed out. (read timeout=10)",
+    "timestamp": "2025-07-16T23:01:11.400680",
+    "response_data": null
   },
   {
     "test": "User Login",
     "success": true,
     "details": "Login successful with valid token",
-    "timestamp": "2025-07-16T22:59:35.057514",
+    "timestamp": "2025-07-16T23:01:21.103752",
     "response_data": {
       "message": "Login successful",
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMGEwMjM3YjgtMjJlYy00MDc4LThmZWUtOTJjN2ZlZDQ1OTc1IiwiZXhwIjoxNzUzMzExNTc1fQ.4FWjnH9_9Z-W3w-90qfqJ_JcaWxzZjFrmGZHIWCBqjY",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMGEwMjM3YjgtMjJlYy00MDc4LThmZWUtOTJjN2ZlZDQ1OTc1IiwiZXhwIjoxNzUzMzExNjgxfQ.oH1Yr8fRjY9DiWZmzgJMIxmZxDCcZSh4YyvqVaiq31s",
       "user": {
         "id": "0a0237b8-22ec-4078-8fee-92c7fed45975",
         "username": "john_doe",
@@ -49,34 +37,102 @@
   },
   {
     "test": "Tech News",
-    "success": false,
-    "details": "HTTP 500: Internal Server Error",
-    "timestamp": "2025-07-16T22:59:36.412820",
-    "response_data": null
+    "success": true,
+    "details": "Retrieved 20 articles with proper structure",
+    "timestamp": "2025-07-16T23:01:22.389657",
+    "response_data": {
+      "total": 20,
+      "sample_article": {
+        "id": "4c80fb2f-b189-4c34-996b-b49fb1dd6b50",
+        "title": "Huawei's star AI model was built on burnout and plagiarism",
+        "description": "On July 5th, the\u00a0True-Story-of-Pangu\u00a0GitHub repository was published, and it is not a traditional code repository, as it only contains a\u00a0README.md. It is a whistleblower report detailing the development of Noah Pangu \u2014 Huawei\u2019s flagship LLM.\n\nThis project was\u2026",
+        "url": "https://the-open-source-ward.ghost.io/the-pangu-illusion-how-huaweis-star-ai-model-was-built-on-burnout-betrayal-and-open-source-theft/",
+        "source": "Ghost.io",
+        "published_at": "2025-07-15T22:54:19Z",
+        "image_url": "https://the-open-source-ward.ghost.io/content/images/size/w1200/2025/07/The-Open-Source-Ward.png",
+        "sentiment": {
+          "sentiment": "neutral",
+          "polarity": 0.0,
+          "subjectivity": 0.875
+        },
+        "keywords": [
+          "artificial intelligence"
+        ],
+        "fetched_at": "2025-07-16T23:01:22.349751"
+      }
+    }
   },
   {
     "test": "Twitter Mentions",
     "success": false,
-    "details": "HTTP 500: Internal Server Error",
-    "timestamp": "2025-07-16T22:59:37.798938",
+    "details": "Unexpected response format: {'success': False, 'error': 'Twitter API error: 429'}",
+    "timestamp": "2025-07-16T23:01:23.562662",
     "response_data": null
   },
   {
     "test": "Add Competitor",
-    "success": false,
-    "details": "HTTP 500: Internal Server Error",
-    "timestamp": "2025-07-16T22:59:38.824660",
-    "response_data": null
+    "success": true,
+    "details": "Competitor added successfully with ID: eb19fea7-003f-4ac9-a1f2-ec81e63b5c10",
+    "timestamp": "2025-07-16T23:01:24.574570",
+    "response_data": {
+      "success": true,
+      "message": "Competitor added successfully",
+      "competitor": {
+        "id": "eb19fea7-003f-4ac9-a1f2-ec81e63b5c10",
+        "user_id": "0a0237b8-22ec-4078-8fee-92c7fed45975",
+        "name": "TechRival Corp",
+        "website": "https://techrival.com",
+        "description": "Main competitor in AI solutions",
+        "created_at": "2025-07-16T23:01:24.570299"
+      }
+    }
+  },
+  {
+    "test": "Get Competitors",
+    "success": true,
+    "details": "Retrieved 2 competitors including the added one",
+    "timestamp": "2025-07-16T23:01:24.594596",
+    "response_data": {
+      "success": true,
+      "competitors": [
+        {
+          "id": "7d25d9f4-52f9-40ee-8ebb-3c5185eaba4c",
+          "user_id": "0a0237b8-22ec-4078-8fee-92c7fed45975",
+          "name": "TechRival Corp",
+          "website": "https://techrival.com",
+          "description": "Main competitor in AI solutions",
+          "created_at": "2025-07-16T22:59:38.806000"
+        },
+        {
+          "id": "eb19fea7-003f-4ac9-a1f2-ec81e63b5c10",
+          "user_id": "0a0237b8-22ec-4078-8fee-92c7fed45975",
+          "name": "TechRival Corp",
+          "website": "https://techrival.com",
+          "description": "Main competitor in AI solutions",
+          "created_at": "2025-07-16T23:01:24.570000"
+        }
+      ]
+    }
+  },
+  {
+    "test": "Delete Competitor",
+    "success": true,
+    "details": "Competitor deleted successfully",
+    "timestamp": "2025-07-16T23:01:24.607812",
+    "response_data": {
+      "success": true,
+      "message": "Competitor deleted successfully"
+    }
   },
   {
     "test": "Dashboard Stats",
     "success": true,
     "details": "Dashboard stats retrieved with proper structure",
-    "timestamp": "2025-07-16T22:59:39.839367",
+    "timestamp": "2025-07-16T23:01:25.737551",
     "response_data": {
       "success": true,
       "stats": {
-        "tech_news_count": 20,
+        "tech_news_count": 40,
         "twitter_mentions_count": 20,
         "competitors_count": 1,
         "sentiment_summary": {
@@ -91,7 +147,7 @@
     "test": "Translations (en)",
     "success": true,
     "details": "Translations retrieved for en with proper structure",
-    "timestamp": "2025-07-16T22:59:40.849322",
+    "timestamp": "2025-07-16T23:01:26.746614",
     "response_data": {
       "success": true,
       "language": "en",
@@ -122,7 +178,7 @@
     "test": "Translations (fr)",
     "success": true,
     "details": "Translations retrieved for fr with proper structure",
-    "timestamp": "2025-07-16T22:59:40.857007",
+    "timestamp": "2025-07-16T23:01:26.753949",
     "response_data": {
       "success": true,
       "language": "fr",
