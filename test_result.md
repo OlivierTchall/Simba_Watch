@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Test the complete Simba-Watch backend API with comprehensive endpoint testing including authentication, external API integrations, and data validation"
+user_problem_statement: "Test the complete Simba-Watch frontend application with comprehensive user flow testing. The app is running at http://localhost:3000."
 
 backend:
   - task: "API Health Check"
