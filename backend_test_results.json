@@ -1,0 +1,152 @@
+[
+  {
+    "test": "Health Check",
+    "success": true,
+    "details": "API is healthy and responding correctly",
+    "timestamp": "2025-07-16T22:59:33.017017",
+    "response_data": {
+      "status": "healthy",
+      "service": "Simba-Watch API"
+    }
+  },
+  {
+    "test": "User Registration",
+    "success": true,
+    "details": "User registered successfully with valid token",
+    "timestamp": "2025-07-16T22:59:34.046186",
+    "response_data": {
+      "message": "User registered successfully",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMGEwMjM3YjgtMjJlYy00MDc4LThmZWUtOTJjN2ZlZDQ1OTc1IiwiZXhwIjoxNzUzMzExNTc0fQ.YrloQax445G6C44jPvtdoQrpr5d1Mw7SMX7F3BkogNQ",
+      "user": {
+        "id": "0a0237b8-22ec-4078-8fee-92c7fed45975",
+        "username": "john_doe",
+        "email": "john.doe@techcorp.com",
+        "business_name": "TechCorp Solutions",
+        "sector": "it",
+        "location": "San Francisco, CA",
+        "language": "en"
+      }
+    }
+  },
+  {
+    "test": "User Login",
+    "success": true,
+    "details": "Login successful with valid token",
+    "timestamp": "2025-07-16T22:59:35.057514",
+    "response_data": {
+      "message": "Login successful",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMGEwMjM3YjgtMjJlYy00MDc4LThmZWUtOTJjN2ZlZDQ1OTc1IiwiZXhwIjoxNzUzMzExNTc1fQ.4FWjnH9_9Z-W3w-90qfqJ_JcaWxzZjFrmGZHIWCBqjY",
+      "user": {
+        "id": "0a0237b8-22ec-4078-8fee-92c7fed45975",
+        "username": "john_doe",
+        "email": "john.doe@techcorp.com",
+        "business_name": "TechCorp Solutions",
+        "sector": "it",
+        "location": "San Francisco, CA",
+        "language": "en"
+      }
+    }
+  },
+  {
+    "test": "Tech News",
+    "success": false,
+    "details": "HTTP 500: Internal Server Error",
+    "timestamp": "2025-07-16T22:59:36.412820",
+    "response_data": null
+  },
+  {
+    "test": "Twitter Mentions",
+    "success": false,
+    "details": "HTTP 500: Internal Server Error",
+    "timestamp": "2025-07-16T22:59:37.798938",
+    "response_data": null
+  },
+  {
+    "test": "Add Competitor",
+    "success": false,
+    "details": "HTTP 500: Internal Server Error",
+    "timestamp": "2025-07-16T22:59:38.824660",
+    "response_data": null
+  },
+  {
+    "test": "Dashboard Stats",
+    "success": true,
+    "details": "Dashboard stats retrieved with proper structure",
+    "timestamp": "2025-07-16T22:59:39.839367",
+    "response_data": {
+      "success": true,
+      "stats": {
+        "tech_news_count": 20,
+        "twitter_mentions_count": 20,
+        "competitors_count": 1,
+        "sentiment_summary": {
+          "positive": 4,
+          "negative": 2,
+          "neutral": 4
+        }
+      }
+    }
+  },
+  {
+    "test": "Translations (en)",
+    "success": true,
+    "details": "Translations retrieved for en with proper structure",
+    "timestamp": "2025-07-16T22:59:40.849322",
+    "response_data": {
+      "success": true,
+      "language": "en",
+      "translations": {
+        "app_name": "Simba-Watch",
+        "dashboard": "Dashboard",
+        "technology_monitoring": "Technology Monitoring",
+        "competitive_monitoring": "Competitive Monitoring",
+        "credibility_monitoring": "Credibility Monitoring",
+        "marketing_monitoring": "Marketing Monitoring",
+        "recent_news": "Recent News",
+        "recent_mentions": "Recent Mentions",
+        "competitors": "Competitors",
+        "add_competitor": "Add Competitor",
+        "sentiment_analysis": "Sentiment Analysis",
+        "positive": "Positive",
+        "negative": "Negative",
+        "neutral": "Neutral",
+        "login": "Login",
+        "register": "Register",
+        "logout": "Logout",
+        "profile": "Profile",
+        "settings": "Settings"
+      }
+    }
+  },
+  {
+    "test": "Translations (fr)",
+    "success": true,
+    "details": "Translations retrieved for fr with proper structure",
+    "timestamp": "2025-07-16T22:59:40.857007",
+    "response_data": {
+      "success": true,
+      "language": "fr",
+      "translations": {
+        "app_name": "Simba-Watch",
+        "dashboard": "Tableau de bord",
+        "technology_monitoring": "Veille technologique",
+        "competitive_monitoring": "Veille concurrentielle",
+        "credibility_monitoring": "Veille de cr\u00e9dibilit\u00e9",
+        "marketing_monitoring": "Veille marketing",
+        "recent_news": "Actualit\u00e9s r\u00e9centes",
+        "recent_mentions": "Mentions r\u00e9centes",
+        "competitors": "Concurrents",
+        "add_competitor": "Ajouter un concurrent",
+        "sentiment_analysis": "Analyse des sentiments",
+        "positive": "Positif",
+        "negative": "N\u00e9gatif",
+        "neutral": "Neutre",
+        "login": "Connexion",
+        "register": "S'inscrire",
+        "logout": "D\u00e9connexion",
+        "profile": "Profil",
+        "settings": "Param\u00e8tres"
+      }
+    }
+  }
+]
