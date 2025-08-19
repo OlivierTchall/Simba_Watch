@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "name": "simba-watch",
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "frontend/$1"
+    }
+  ],
+  "env": {
+    "REACT_APP_BACKEND_URL": "@backend-url"
+  },
+  "functions": {
+    "frontend/build/static/js/*.js": {
+      "maxDuration": 10
+    }
+  }
+}

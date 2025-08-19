@@ -1,0 +1,20 @@
+{
+  "name": "simba-watch",
+  "version": "1.0.0",
+  "description": "Simba-Watch - Strategic Intelligence Monitoring for Sub-Saharan Africa",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && uvicorn server:app --host 0.0.0.0 --port $PORT",
+    "dev:backend": "cd backend && uvicorn server:app --reload",
+    "dev:frontend": "cd frontend && npm start",
+    "deploy:railway": "railway up",
+    "deploy:vercel": "vercel --prod"
+  },
+  "keywords": ["monitoring", "intelligence", "africa", "sme", "technology", "competitor", "social-media"],
+  "author": "Simba-Watch Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/simba-watch.git"
+  }
+}
