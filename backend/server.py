@@ -17,9 +17,10 @@ import json
 
 # Environment variables
 MONGO_URL = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
-NEWS_API_KEY = "7cdbae1ef22b4adda9740958b0383f13"
-TWITTER_BEARER_TOKEN = "AAAAAAAAAAAAAAAAAAAAABVj3AEAAAAAmhiW9ldmhlJ64ANMCoU35THhqBs%3DkgmhbKcZ6ALLft36nJxj0Z6OFLLHjjSFYqrFcABaE2QOk3GTx2"
-JWT_SECRET = "simba-watch-secret-key-2024"
+NEWS_API_KEY = os.environ.get('NEWS_API_KEY', '7cdbae1ef22b4adda9740958b0383f13')
+TWITTER_BEARER_TOKEN = os.environ.get('TWITTER_BEARER_TOKEN', 'AAAAAAAAAAAAAAAAAAAAABVj3AEAAAAAmhiW9ldmhlJ64ANMCoU35THhqBs%3DkgmhbKcZ6ALLft36nJxj0Z6OFLLHjjSFYqrFcABaE2QOk3GTx2')
+JWT_SECRET = os.environ.get('JWT_SECRET', 'simba-watch-secret-key-2024')
+PORT = int(os.environ.get('PORT', 8001))
 
 app = FastAPI(title="Simba-Watch API", version="1.0.0")
 
